@@ -1,0 +1,14 @@
+{
+  "name": "shah-designs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SHAH DESIGNS — portfolio website with interactive swipe experience and Supabase-powered admin dashboard.",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "sitemap": "node scripts/sitemap.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

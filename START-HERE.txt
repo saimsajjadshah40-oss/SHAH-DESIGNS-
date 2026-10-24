@@ -1,0 +1,38 @@
+SHAH DESIGNS — QUICK START
+==========================
+
+1) GITHUB
+   - Unzip shah-designs.zip and open the "shah-designs" folder.
+   - In your (empty) GitHub repo: Add file -> Upload files.
+   - Drag EVERYTHING from inside the folder (admin, assets, scripts, supabase,
+     all .html files, vercel.json, netlify.toml, package.json, README.md, ...).
+   - Click "Commit changes".
+   - Check: assets/js/config.js on GitHub must show supabaseUrl
+     'https://laqolmdwnjgcsmjpdrdc.supabase.co'.
+
+2) VERCEL
+   - vercel.com -> Add New -> Project -> Import your GitHub repo.
+   - Framework Preset: Other. Leave build/output/install commands empty.
+   - Deploy. Custom domain: Project -> Settings -> Domains.
+
+3) SUPABASE  (project: https://laqolmdwnjgcsmjpdrdc.supabase.co)
+   The project URL and anon (public) key are already in assets/js/config.js.
+   a. Authentication -> Users -> Add user -> Create new user
+      email: saimsajjadshah40@gmail.com, your private password,
+      tick "Auto Confirm User".
+   b. SQL Editor -> New query -> paste ALL of supabase/schema.sql -> Run.
+      The result must show your email with "is admin".
+   c. Authentication -> URL Configuration:
+      Site URL:      https://your-domain (or https://your-project.vercel.app)
+      Redirect URLs: https://your-domain/admin/reset
+                     https://your-project.vercel.app/admin/reset
+   d. (Recommended) Authentication -> Sign In / Providers -> Email ->
+      turn OFF "Allow new users to sign up".
+
+4) ADMIN
+   - Open https://your-site/admin/login  (press Ctrl+Shift+R once).
+   - Swipe Experience -> "Import the 5 default slides".
+   - Services -> "Import the default services".
+
+Never put your password or the Supabase service_role key in any file.
+Full details: README.md
