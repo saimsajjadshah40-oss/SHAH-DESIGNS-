@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — SHAH DESIGNS</title>
+<meta name="description" content="SHAH DESIGNS — logo & banner design, YouTube thumbnails, websites, CV & resume design and all graphic design services. Chat on WhatsApp.">
+<meta name="keywords" content="graphic designer, logo design, thumbnail design, web developer, CV design, SHAH DESIGNS">
+<meta name="theme-color" content="#E9EBFF">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SHAH DESIGNS">
+<meta property="og:title" content="Contact — SHAH DESIGNS">
+<meta property="og:description" content="SHAH DESIGNS — logo & banner design, YouTube thumbnails, websites, CV & resume design and all graphic design services. Chat on WhatsApp.">
+<meta property="og:image" content="/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="modulepreload" href="/assets/js/site.js">
+<script type="module" src="/assets/js/pages.js"></script>
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="deco" aria-hidden="true"><span class="torus float"></span><span class="blob3d violet float" style="--d:-2s"></span></div>
+  <span class="eyebrow reveal">Contact</span>
+  <h1 class="split"><span class="w"><span style="--i:0">Let’s</span></span> <span class="w"><span class="hl" style="--i:1">build</span></span> <span class="w"><span style="--i:2">something</span></span> <span class="w"><span style="--i:3">great</span></span></h1>
+  <p class="reveal">Send your project details below, or message directly on WhatsApp for the fastest reply.</p>
+</div></section>
+<section class="section" style="padding-top:10px"><div class="wrap contact-grid">
+  <div class="contact-cards" id="contact-cards"></div>
+  <div class="form-card reveal">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company_website" novalidate>
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Leave this empty <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
+      <div class="form-grid">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" maxlength="100" autocomplete="name" required><div class="err" role="alert"></div></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" maxlength="254" autocomplete="email" required><div class="err" role="alert"></div></div>
+        <div class="field"><label for="f-phone">WhatsApp number <span class="opt">(optional)</span></label><input id="f-phone" name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="+92 3xx xxxxxxx"><div class="err" role="alert"></div></div>
+        <div class="field"><label for="f-service">Service</label><select id="f-service" name="service" required><option value="">Select a service…</option></select><div class="err" role="alert"></div></div>
+        <div class="field full"><label for="f-budget">Budget range <span class="opt">(optional)</span></label>
+          <select id="f-budget" name="budget"><option value="">Prefer to discuss</option><option>Under PKR 5,000</option><option>PKR 5,000 – 15,000</option><option>PKR 15,000 – 50,000</option><option>PKR 50,000+</option><option>Under $50</option><option>$50 – $200</option><option>$200 – $1,000</option><option>$1,000+</option></select></div>
+        <div class="field full"><label for="f-details">Project details</label><textarea id="f-details" name="details" maxlength="5000" required placeholder="What do you need, when do you need it, and any links or references?"></textarea><div class="err" role="alert"></div></div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary btn-lg" type="submit">Send project details</button>
+        <button class="btn btn-wa btn-lg" type="button" id="wa-instead">Send via WhatsApp instead</button>
+      </div>
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      <p class="muted" style="font-size:13px;margin-top:14px">Have files to share? Send them on WhatsApp after submitting.</p>
+    </form>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<noscript><div style="position:fixed;inset:auto 0 0 0;padding:14px;background:#08143C;color:#fff;text-align:center;z-index:999">This website needs JavaScript for its interactive experience. WhatsApp: <a style="color:#9fb6ff" href="https://wa.me/923228037525">+92 322 8037525</a></div></noscript>
+</body>
+</html>
